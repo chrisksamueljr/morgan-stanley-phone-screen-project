@@ -8,7 +8,9 @@
   <ng-container matColumnDef="name">
     <th  mat-sort-header="name" class="ms-colors ms-column-left" mat-header-cell *matHeaderCellDef> Account <span><i class="fas fa-angle-up"></i></span>
      </th>
-    <td class="ms-colors-name" mat-cell *matCellDef="let account"> {{account.name}} </td>
+    <td class="ms-colors-name" mat-cell *matCellDef="let account"> 
+  <b>  {{account.name}} </b>
+  </td>
   </ng-container>
 
   <!-- Name Column -->
