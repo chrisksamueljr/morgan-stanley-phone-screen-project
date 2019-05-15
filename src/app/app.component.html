@@ -1,8 +1,19 @@
 <table 
-    matSort (matSortChange)="sortData($event)"
-    mat-table 
-    [dataSource]="dataSource" 
-    class="mat-elevation-z8">
+   mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+<!-- 
+  <ng-container matColumnDef="identity">
+
+    <th  
+          id="myApp-mat-header-stem"
+         class="account-name-color ms-column-left" 
+         mat-header-cell *matHeaderCellDef
+         >  
+      ID
+    </th>
+    <td class="ms-colors-name" mat-cell *matCellDef="let account"> 
+  <b>  {{account.identity}} </b>
+  </td>
+  </ng-container> -->
 
   <!-- Position Column -->
   <ng-container matColumnDef="name">
