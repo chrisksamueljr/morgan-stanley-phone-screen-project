@@ -2,3 +2,10 @@
 body {
 	background-color: #19a0d5;
 }
+.mat-sort-header-arrow.ng-trigger.ng-trigger-arrowPosition.ng-tns-c2-0.ng-star-inserted  .mat-sort-header-stem {
+display: none;
+}
+
+.mat-sort-header-arrow.ng-trigger.ng-trigger-arrowPosition.ng-tns-c2-0.ng-star-inserted {
+color: #19a0d5;
+}
