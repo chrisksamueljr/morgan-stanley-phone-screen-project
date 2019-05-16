@@ -68,7 +68,7 @@ export class AppComponent {
 
 title = 'morgan-stanley';
 hideAccountId = true;
-displayedColumns: string[] = ['name',  'available_cash'];
+displayedColumns: string[] = ['identity',  'available_cash'];
 dataSource = new MatTableDataSource(ACCOUNTS_DATA);
 
 @ViewChild(MatSort) sort: MatSort;

@@ -16,9 +16,9 @@
   </ng-container> -->
 
   <!-- Position Column -->
-  <ng-container matColumnDef="name">
+  <ng-container matColumnDef="identity">
 
-    <th  mat-sort-header="name" 
+    <th  mat-sort-header="identity" 
           id="myApp-mat-header-stem"
          class="account-name-color ms-column-left" 
          mat-header-cell *matHeaderCellDef
@@ -26,13 +26,17 @@
       Account
     </th>
     <td class="ms-colors-name" mat-cell *matCellDef="let account"> 
-  <b>  {{account.name}} </b>
+  <b>  {{account.name}} - {{account.identity}} </b>
   </td>
   </ng-container>
 
   <!-- Name Column -->
   <ng-container matColumnDef="available_cash">
-    <th class="ms-colors ms-column-right" mat-header-cell *matHeaderCellDef> 
+
+    <th mat-sort-header="available_cash" 
+    class="ms-colors ms-column-right" 
+    mat-header-cell
+    *matHeaderCellDef> 
     	<p class="available-cash-column-text">Available Cash</p>
     	 <p class="available-cash-subtext">Today's Change</p>
      </th>
@@ -51,3 +55,5 @@
   		mat-row 
         *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
+
+<!-- <course></course> -->

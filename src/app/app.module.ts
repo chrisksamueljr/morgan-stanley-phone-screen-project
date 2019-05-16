@@ -5,6 +5,9 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 
+
+
+
 import {A11yModule} from '@angular/cdk/a11y';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import {PortalModule} from '@angular/cdk/portal';
@@ -50,6 +53,7 @@ import {
   MatTooltipModule,
   MatTreeModule,
 } from '@angular/material';
+import { CourseComponent } from './course/course.component';
 
 const ComponentDevKit_Modules = [
 ];
@@ -60,7 +64,8 @@ const Material_Modules = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CourseComponent
   ],
   imports: [
     BrowserModule,
