@@ -7,6 +7,7 @@ table {
     display: none;
 }
 
+
 .positive { 
 	color: green;
  }
@@ -69,10 +70,11 @@ i {
 	text-align: right;
 }
 
-
+ 
 .available-cash-column-text {
 	padding: 0;
 	margin: 0;	
+	display: grid;
 }
 
 .available-cash-subtext {
