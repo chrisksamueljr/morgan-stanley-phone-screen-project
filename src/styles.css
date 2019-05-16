@@ -9,3 +9,14 @@ display: none;
 .mat-sort-header-arrow.ng-trigger.ng-trigger-arrowPosition.ng-tns-c2-0.ng-star-inserted {
 color: #19a0d5;
 }
+
+.mat-sort-header-arrow.ng-trigger.ng-trigger-arrowPosition.ng-tns-c2-1.ng-star-inserted  .mat-sort-header-stem {
+display: none;
+padding-bottom: 5px;
+}
+.mat-sort-header-arrow.ng-trigger.ng-trigger-arrowPosition.ng-tns-c2-1.ng-star-inserted {
+color: #19a0d5;
+padding-bottom: 20px;
+}
+
+/*mat-sort-header-arrow ng-trigger ng-trigger-arrowPosition ng-tns-c2-1 ng-star-inserted*/

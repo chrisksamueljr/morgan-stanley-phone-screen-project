@@ -15,21 +15,21 @@ const ACCOUNTS_DATA: AccountsTypes[] = [
 		identity: '0029',
 		name: 'AAA',
 		available_cash: '39,160,334.42',
-		today_change: '-0.07% /$31, 435,87',
+		today_change: '0.07% /$31, 435,87',
 		positive: false
 	},
 	{
 		identity: '0146' ,
 		name: 'IRA',
 		available_cash: '15,884,302.39',
-		today_change: '+0.03% /$7,430.83',
+		today_change: '0.03% /$7,430.83',
 		positive: true
 	},
 	{
 		identity: '1812' ,
 		name: 'AAA',
 		available_cash: '2,010,926.10',
-		today_change: '+0.21% /$38,881.63',
+		today_change: '0.21% /$38,881.63',
 		positive: true
 	},
 	{
@@ -43,14 +43,14 @@ const ACCOUNTS_DATA: AccountsTypes[] = [
 		identity: '3810',
 		name: 'AAA',
 		available_cash: '10,050,054.07',
-		today_change: '+0.08% /$8,916,69',
+		today_change: '0.08% /$8,916,69',
 		positive: true
 	},
 	{
 		identity: '5200',
 		name: 'IRA',
 		available_cash: '5,763.36',
-		today_change: '-0.08% /$8,916,69',
+		today_change: '0.08% /$8,916,69',
 		positive: false
 	}
 
@@ -74,6 +74,16 @@ dataSource = new MatTableDataSource(ACCOUNTS_DATA);
 @ViewChild(MatSort) sort: MatSort;
 
 
+setStatus(check: boolean){
+	switch (check) {
+ 		case true :
+ 			return '+';
+ 		case false :
+ 			return '-';
+ 		case null :
+ 			return '';	
+ 	}
+}
 
  setColor(change) {
  	console.log('setColor()')

@@ -34,18 +34,21 @@
   <ng-container matColumnDef="available_cash">
 
     <th mat-sort-header="available_cash" 
-
-    class="ms-colors ms-column-right  container-items-float-right container-items-display-grid" 
-    mat-header-cell
+      arrowPosition="before" class="ms-colors ms-column-right " 
+      mat-header-cell
     *matHeaderCellDef> 
     	<p class="available-cash-column-text">Available Cash 
         <span class="available-cash-subtext">Today's Change</span>
       </p>
      </th>
+
     <td class="ms-colors ms-column-right container-items-display-grid" mat-cell *matCellDef="let account"> 
 
-    <p class="available-cash-column-text">{{account.available_cash}}</p>
-     <span [style.color]="setColor(account.positive)" class="today-change-subtext-pos">{{account.today_change}}</span>
+    <p class="available-cash-column-text">${{account.available_cash}}</p>
+     <span [style.color]="setColor(account.positive)" class="today-change-subtext-pos">
+     
+    {{setStatus(account.positive)}} {{account.today_change}}
+   </span>
      </td>
   </ng-container>
 

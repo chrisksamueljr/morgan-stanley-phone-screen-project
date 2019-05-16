@@ -6,6 +6,11 @@ table {
 #myApp-mat-header-stem .mat-header-stem {
     display: none;
 }
+/*
+#myApp-mat-header-stem-2 .mat-sort-header-stem {
+    display: none;
+}
+*/
 
 
 .positive { 
