@@ -100,8 +100,7 @@ const secondPush: AccountsTypes[] = [
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-
+buttonClicked: boolean;
 title = 'morgan-stanley';
 hideAccountId = true;
 displayedColumns: string[] = ['identity',  'cash'];
@@ -136,9 +135,13 @@ setStatus(check: boolean){
  loadMoreAccounts() {
  	console.log(' Clicking the loadMoreAccounts Button');
      this.dataSource = new MatTableDataSource(secondPush);
+     this.buttonClicked = false;
+     console.log(this.buttonClicked);
  }
 
   ngOnInit() {
+ 
+     this.buttonClicked = true;
 
     this.dataSource.sort = this.sort;
       	console.log(this.dataSource);
