@@ -1,11 +1,11 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
-import {Sort, MatSort, MatTableDataSource} from '@angular/material';
+import { Sort, MatSort, MatTableDataSource } from '@angular/material';
 
 export interface AccountsTypes { 
 	identity: string;
 	name: string;
 	available_cash: string;
-	cash: number,
+	cash: number;
 	today_change: string;
 	positive: boolean;
 }
@@ -17,7 +17,7 @@ const ACCOUNTS_DATA: AccountsTypes[] = [
 		name: 'AAA',
 		available_cash: '39,160,334.42',
 		cash: 39160334,
-		today_change: '0.07% /$31, 435,87',
+		today_change: '0.07% / $31, 435,87',
 		positive: false
 	},
 	{
@@ -25,7 +25,7 @@ const ACCOUNTS_DATA: AccountsTypes[] = [
 		name: 'IRA',
 		available_cash: '15,884,302.39',
 		cash: 15884302,
-		today_change: '0.03% /$7,430.83',
+		today_change: '0.03% / $7,430.83',
 		positive: true
 	},
 	{
@@ -33,15 +33,15 @@ const ACCOUNTS_DATA: AccountsTypes[] = [
 		name: 'AAA',
 		available_cash: '2,010,926.10',
 		cash: 2010926,
-		today_change: '0.21% /$38,881.63',
+		today_change: '0.21% / $38,881.63',
 		positive: true
 	},
 	{
-		identity: '2019' ,
+		identity: '2019',
 		name: 'REG',
 		available_cash: '13,465,679.34',
 		cash: 13465679,
-		today_change: '0.00% /$0.00',
+		today_change: '0.00% / $0.00',
 		positive: null
 	},
 	{
@@ -49,7 +49,7 @@ const ACCOUNTS_DATA: AccountsTypes[] = [
 		name: 'AAA',
 		available_cash: '10,050,054.07',
 		cash: 10050054,
-		today_change: '0.08% /$8,916,69',
+		today_change: '0.08% / $8,916,69',
 		positive: true
 	},
 	{
@@ -57,7 +57,7 @@ const ACCOUNTS_DATA: AccountsTypes[] = [
 		name: 'IRA',
 		available_cash: '5,763.36',
 		cash: 57630,
-		today_change: '0.08% /$8,916,69',
+		today_change: '0.08% / $8,916,69',
 		positive: false
 	}
 
