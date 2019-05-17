@@ -12,7 +12,12 @@ table {
 }
 */
 
-
+button {
+	width: 100%;
+	color: #19a0d5;
+	border-radius: 0;
+	font-size: initial;
+}
 .positive { 
 	color: green;
  }
